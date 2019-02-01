@@ -1,0 +1,12 @@
+<h1>Book</h1>
+<table>
+    <?php foreach ($books as $book) : ?>
+        <tr>
+            <td>
+                <h2><a href="book/<?= $book['EAN'] ?>"><?= $book['title'] ?></a></h2>
+                <?= $book['description'] ?> <a href="book/<?= $book['EAN'] ?>/odstranit">Odstranit</a>
+                <a href="editor/<?= $book['EAN'] ?>/edit">Editace</a>
+            </td>
+        </tr>
+    <?php endforeach ?>
+</table>

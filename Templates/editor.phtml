@@ -1,0 +1,17 @@
+<h1>Editor knih</h1>
+
+<form method="post">
+    <input type="hidden" name="book_id" value="<?= $book['book_id'] ?>" />
+    Kniha<br />
+    <input type="text" name="title" value="<?= $book['title'] ?>" /><br />
+    Spisovatel<br />
+    <input type="text" name="writer" value="<?= $book['writer'] ?>" /><br />
+    EAN<br />
+    <input type="text" name="EAN" value="<?= $book['EAN'] ?>" /><br />
+    Počet kusu<br />
+    <input type="text" name="countbook" value="<?= $book['countbook'] ?>" /><br />
+    Popisek<br />
+    <input type="text" name="description" value="<?= $book['description'] ?>" /><br />
+
+    <input type="submit" value="Založit knihu" />
+</form>

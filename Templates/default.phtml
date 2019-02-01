@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="cs-cz">
+	<head>
+		<base href="/localhost" />
+		<meta charset="UTF-8" />
+	</head>
+
+	<body>
+		<header>
+			<h1>StringData</h1>
+		</header>
+			
+		<nav>
+			<ul>
+				<li><a href="book" class="myButton">Knihy</a></li>
+                <li><a href="editor" class="myButton">Založení knihy</a></li>
+            </ul>
+		</nav>
+		<article>
+			<?php $this->kontroler->renderView();?>
+		</article>
+	</body>
+</html>
